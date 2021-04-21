@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/api/pages",
+      "handler": "page.find",
+      "config": {
+        "policies": ["global::page"]
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pages/count",
+      "handler": "page.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/pages/:id",
+      "handler": "page.findOne",
+      "config": {
+        "policies": ["global::page"]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pages",
+      "handler": "page.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pages/:id",
+      "handler": "page.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pages/:id",
+      "handler": "page.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
