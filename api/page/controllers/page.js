@@ -7,6 +7,8 @@
 
 module.exports = {
   find: async ctx => {
+    console.log('in controller');
+    console.log(ctx.state.aa);
     return ctx.state.aa;
   },
 };
